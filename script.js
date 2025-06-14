@@ -220,17 +220,19 @@ const verificarSolucion = () => {
       const tr = document.getElementById(`tr${i}`)
       for (let j = 0; j < 9; j++) {
          const input = tr.children[j].querySelector('input')
-         const valor = input.value
-         if (valor === '') {
+         const valor = parseInt(input.value)
+         if (!valor) {
             alert(`Casilla vacía en (${i + 1}, ${j + 1})`)
+            return
+         }
+         if (valor !== solucionCompleta[i][j]) {
+            alert(`Número incorrecto en (${i + 1}, ${j + 1})`)
             return
          }
       }
    }
 
-   alert(
-      '¡Comprobación simple! No he validado reglas aún, solo que todo está lleno.'
-   )
+   alert('¡Sudoku resuelto correctamente! 🎉')
 }
 
 const generarNuevoSudoku = nivel => {
