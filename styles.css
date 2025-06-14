@@ -9,17 +9,6 @@ body {
    text-align: center;
    gap: 20px;
 }
-td {
-   border: 1px solid black;
-   width: 60px;
-   height: 30px;
-}
-table {
-   border-collapse: collapse;
-}
-td {
-   text-align: center;
-}
 input[type='text'] {
    width: 30px !important;
 }
@@ -42,7 +31,7 @@ button:hover {
 /* Borde general para cada celda */
 td {
    border: 1px solid black;
-   width: 60px;
+   width: 42px;
    height: 30px;
    text-align: center;
 }
