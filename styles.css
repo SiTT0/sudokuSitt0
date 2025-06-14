@@ -5,7 +5,7 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 800px;
+   width: auto;
    text-align: center;
    gap: 20px;
 }
@@ -30,9 +30,8 @@ button:hover {
 }
 /* Borde general para cada celda */
 td {
-   border: 1px solid black;
-   width: 42px;
-   height: 30px;
+   width: 36px;
+   height: 21px;
    text-align: center;
 }
 
