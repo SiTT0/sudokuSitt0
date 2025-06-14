@@ -1,0 +1,68 @@
+body {
+   background-color: whitesmoke;
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 800px;
+   text-align: center;
+   gap: 20px;
+}
+td {
+   border: 1px solid black;
+   width: 60px;
+   height: 30px;
+}
+table {
+   border-collapse: collapse;
+}
+td {
+   text-align: center;
+}
+input[type='text'] {
+   width: 30px !important;
+}
+div#divButton {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+button {
+   padding-inline: 10px;
+   padding-block: 6px;
+   color: white;
+   background-color: lightcoral;
+   border-radius: 8px;
+   cursor: pointer;
+}
+button:hover {
+   background-color: red;
+}
+/* Borde general para cada celda */
+td {
+   border: 1px solid black;
+   width: 60px;
+   height: 30px;
+   text-align: center;
+}
+
+/* Borde inferior más grueso cada 3 filas */
+tr:nth-child(3) td,
+tr:nth-child(6) td,
+tr:nth-child(9) td {
+   border-bottom: 3px solid black;
+}
+
+/* Borde derecho más grueso cada 3 columnas */
+td:nth-child(3),
+td:nth-child(6),
+td:nth-child(9) {
+   border-right: 3px solid black;
+}
+
+/* Asegura borde izquierdo y superior también grueso para la tabla externa */
+table {
+   border-collapse: collapse;
+   border: 3px solid black;
+}
